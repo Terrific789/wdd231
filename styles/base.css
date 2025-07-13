@@ -8,7 +8,7 @@
 
 *{
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
 }
@@ -21,6 +21,7 @@ header{
     padding: 5px 0px 5px 10px;
     border-bottom: 1px solid #ddd;
 }
+
 header img{
     width: 24px;
     height: 24px;
@@ -28,7 +29,7 @@ header img{
 span{
     font-size: 1.5rem;
     color: var(--text-color);
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hamburger{
@@ -135,7 +136,7 @@ p{
     margin-top: 10px;
 }
 
-button{
+.btns button{
     display: block;
     min-width: 90px;
     height: 40px;
