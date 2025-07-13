@@ -108,7 +108,7 @@ function displayCourses(courseArray) {
     else card.classList.add('pending');
 
     card.innerHTML = `
-      <h3>${course.subject} ${course.number}: ${course.title}</h3>
+      <h2>${course.subject} ${course.number}: ${course.title}</h2>
       <p><strong>Credits:</strong> ${course.credits}</p>
       <p><strong>Description:</strong> ${course.description}</p>
       <p><strong>Tech:</strong> ${course.technology.join(', ')}</p>
