@@ -1,0 +1,247 @@
+:root{
+    --primary-color: #4c7daf; /* Green */
+    --secondary-color: #f1f1f1; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: center;
+    column-gap: 10px;
+    padding: 5px 0px 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+header img{
+    width: 24px;
+    height: 24px;
+}
+span{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.hamburger{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 1px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a:hover{
+    background-color: var(--secondary-color);
+}
+
+nav.show{
+    display: flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+h1{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+main span{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+#photo img{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btns button{
+    display: block;
+    min-width: 90px;
+    height: 40px;
+    font-size: 1rem;
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.btns button:hover{
+    background-color: #ddd;
+    transform: translateY(-3px);
+    border-bottom: #333 1px solid;
+    border: none;
+}
+
+.btns button:focus{
+    transform: translateY(0px);
+    border: none;
+    background-color: #ddd;
+}
+
+#totalCredits{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#courses{
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+.completed{
+    background-color: #d4edda;
+}
+
+.pending{
+    background-color: #eeb2b7;
+}
+
+#totalCredits{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: var(--primary-color);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #eee; */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    font-size: 1rem;
+}
+footer{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    background-color: #eee;
+    width: 100%;
+    column-gap: 10px;
+    height: 60px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ccc;
+}
+
+.socials img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.socials a:hover{
+    background-color: #ddd;
+}
